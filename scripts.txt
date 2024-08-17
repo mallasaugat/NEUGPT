@@ -1,0 +1,9 @@
+## To create link to the tokenizer:
+ln -h ./tokenizer.model ./llama-3-8b-hf/tokenizer.model
+
+
+## Convert the model weights to run with Hugging Face:
+TRANSFORM=`python -c "import transformers;print('/'.join(transformers.__file__.split('/')[:-1])+'/models/llama/convert_llama_weights_to_hf.py')"`
+pip install protobuf && python $TRANSFORM --input_dir ../Meta-Llama-3.1-8B --model_size 8B --output_dir ./llama-3-8b-hf
+
+

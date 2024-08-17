@@ -1,0 +1,16 @@
+torch 
+torchvision 
+torchaudio
+
+transformers
+accelerate
+sentence-transformers
+bitsandbytes
+peft
+FlagEmbedding
+
+langchain
+langchain-community
+langchain-core
+chromadb
+pypdf
